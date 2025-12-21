@@ -1,0 +1,15 @@
+body {
+font-family: system-ui, serif;
+max-width: 900px;
+margin: auto;
+line-height: 1.6;
+}
+header h1 {
+margin-bottom: 0;
+}
+nav a {
+margin-right: 1em;
+}
+.content h2 {
+margin-top: 2em;
+}

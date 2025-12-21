@@ -1,0 +1,17 @@
+title: Amidou Sorgho
+description: Academic personal website
+url: https://amidou.github.io
+
+
+markdown: kramdown
+permalink: pretty
+
+
+plugins:
+- jekyll-scholar
+
+
+scholar:
+style: apa
+source: ./_data
+bibliography: publications.bib
