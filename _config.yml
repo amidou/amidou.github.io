@@ -8,10 +8,10 @@ permalink: pretty
 
 
 plugins:
-- jekyll-scholar
+  - jekyll-scholar
 
 
 scholar:
-style: apa
-source: ./_data
-bibliography: publications.bib
+  style: apa
+  source: ./_data
+  bibliography: publications.bib
