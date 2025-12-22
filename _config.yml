@@ -10,7 +10,6 @@ permalink: pretty
 plugins:
   - jekyll-scholar
 
-
 scholar:
   style: apa
   source: ./_data

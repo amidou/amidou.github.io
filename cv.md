@@ -19,4 +19,4 @@ permalink: /cv/
 - Research Fellow, IAU-OAD (2019-2020)
 
 
-[Download full CV (PDF)](/cv.pdf)
+[Download full CV](/cv.pdf)
