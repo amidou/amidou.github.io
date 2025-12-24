@@ -6,7 +6,6 @@ permalink: /publications/
 
 
 {% bibliography %}
-```
 
 
 This automatically renders your BibTeX file.
