@@ -4,11 +4,11 @@ title: Publications
 permalink: /publications/
 ---
 
-
-{% bibliography %}
-
-
-This automatically renders your BibTeX file.
-
-
----
+<ol>
+<li><strong>{Sorgho}, A., {Verdes-Montenegro}, L., {Ianjamasimanana}, R., {Hess}, K.~M., {Jones}, M.~G., {Korsaga}, M., {Wang}, J., {Lin}, X., {Solanes}, J.~M., {Cluver}, M.~E., {Cannon}, J.~M., {Bosma}, A., {Athanassoula}, E., {del Olmo}, A., {Perea}, J., {Mold{\&#x27;o}n}, J., {Wiegert}, T., {Sanchez-Exp{\&#x27;o}sito}, S., {Garrido}, J., {Garc{\&#x27;\i}a-Benito}, R., {J{\&#x27;o}zsa}, G.~I.~G., {Borthakur}, S., {Jarrett}, T., {Namumba}, B., {P{\&#x27;e}rez}, E., {Rom{\&#x27;a}n}, J., {Smirnov}, O.~M. &amp; {Yun}, M.</strong> — <em>{MeerKAT view of Hickson Compact Groups: II. HI deficiency in the cores and surrounding regions}</em> — \aap 696, A177 — (2025) [<a href="https://doi.org/10.1051/0004-6361/202452995">doi</a> | <a href="https://ui.adsabs.harvard.edu/abs/2025A&amp;A...696A.177S">ADS</a>]</li>
+<li><strong>{Sorgho}, A., {Verdes-Montenegro}, L., {Hess}, K.~M., {Jones}, M.~G., {Jarrett}, T.~H., {Sanchez-Exp{\&#x27;o}sito}, S. &amp; {Garrido}, J.</strong> — <em>{The AMIGA sample of isolated galaxies - effects of environment on angular momentum}</em> — \mnras 528, 1630-1654 — (2024) [<a href="https://doi.org/10.1093/mnras/stae006">doi</a> | <a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.528.1630S">ADS</a>]</li>
+<li><strong>{Sorgho}, A., {Chemin}, L., {Kam}, Z.~S., {Foster}, T. &amp; {Carignan}, C.</strong> — <em>{A 5{\textdegree} {\texttimes} 5{\textdegree} deep H I survey of the M81 group - II. H I distribution and kinematics of IC 2574 and HIJASS J1021+68}</em> — \mnras 493, 2618-2631 — (2020) [<a href="https://doi.org/10.1093/mnras/staa415">doi</a> | <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.493.2618S">ADS</a>]</li>
+<li><strong>{Sorgho}, A., {Foster}, T., {Carignan}, C. &amp; {Chemin}, L.</strong> — <em>{A 5$^{deg}$ x 5$^{deg}$ deep H I survey of the M81 group}</em> — \mnras 486, 504-522 — (2019) [<a href="https://doi.org/10.1093/mnras/stz696">doi</a> | <a href="https://ui.adsabs.harvard.edu/abs/2019MNRAS.486..504S">ADS</a>]</li>
+<li><strong>{Sorgho}, A., {Carignan}, C., {Pisano}, D.~J., {Oosterloo}, T., {de Blok}, W.~J.~G., {Korsaga}, M., {Pingel}, N.~M., {Sardone}, Amy, {Goedhart}, S., {Passmoor}, S., {Dikgale}, A. &amp; {Sirothia}, S.~K.</strong> — <em>{Early observations of the MHONGOOSE galaxies: getting ready for MeerKAT}</em> — \mnras 482, 1248-1269 — (2019) [<a href="https://doi.org/10.1093/mnras/sty2785">doi</a> | <a href="https://ui.adsabs.harvard.edu/abs/2019MNRAS.482.1248S">ADS</a>]</li>
+<li><strong>{Sorgho}, A., {Hess}, K., {Carignan}, C. &amp; {Oosterloo}, T.~A.</strong> — <em>{H I observations of galaxies in the southern filament of the Virgo Cluster with the Square Kilometre Array Pathfinder KAT-7 and the Westerbork Synthesis Radio Telescope}</em> — \mnras 464, 530-552 — (2017) [<a href="https://doi.org/10.1093/mnras/stw2341">doi</a> | <a href="https://ui.adsabs.harvard.edu/abs/2017MNRAS.464..530S">ADS</a>]</li>
+</ol>
