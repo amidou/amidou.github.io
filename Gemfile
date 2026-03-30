@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 ruby "3.2.4"
 
-gem "jekyll", "~> 5.0"
+gem "jekyll", "~> 4.4"
 gem "jekyll-sitemap"
 gem "jekyll-feed"
 gem "jekyll-scholar"
