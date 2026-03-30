@@ -1,0 +1,86 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Amidou Sorgho
+    - name: Position
+      value: Severo Ochoa Postdoctoral Fellow
+    - name: Institution
+      value: Instituto de Astrofísica de Andalucía (IAA-CSIC), Granada, Spain
+    - name: Email
+      value: asorgho@iaa.es
+    - name: ORCID
+      value: 0000-0002-5233-8260   # ← replace with your real ORCID
+
+- title: Positions
+  type: time_table
+  contents:
+    - title: Severo Ochoa Postdoctoral Fellow
+      institution: Instituto de Astrofísica de Andalucía (IAA-CSIC), Granada, Spain
+      year: 2023 – present
+      description:
+        - Research on HI in galaxy groups and the role of environment in galaxy evolution.
+        - MeerKAT view of Hickson Compact Groups (PI on ongoing programme).
+    - title: Postdoctoral Researcher
+      institution: Instituto de Astrofísica de Andalucía (IAA-CSIC), Granada, Spain
+      year: 2020 – 2023
+      description:
+        - AMIGA sample — angular momentum of isolated galaxies.
+        - HI imaging and kinematic modelling with MeerKAT.
+    - title: Research Fellow
+      institution: IAU Office of Astronomy for Development, Cape Town, South Africa
+      year: 2019 – 2020
+      description:
+        - Coordination of astronomy development projects across the African continent.
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD in Astronomy
+      institution: University of Cape Town, South Africa
+      year: 2015 – 2019
+      description:
+        - "Thesis: HI observations of galaxies in diverse environments with KAT-7 and MeerKAT."
+        - Supervisor — Prof. Claude Carignan.
+    - title: MSc in Astronomy & Space Science
+      institution: University of Cape Town, South Africa
+      year: 2013 – 2015
+
+- title: Observing & Technical Expertise
+  type: nested_list
+  contents:
+    - title: Radio facilities
+      items:
+        - MeerKAT (South Africa)
+        - KAT-7 (South Africa)
+        - Westerbork Synthesis Radio Telescope (WSRT, Netherlands)
+        - Australia Telescope Compact Array (ATCA)
+    - title: Methods
+      items:
+        - HI 21 cm imaging and spectral-line data reduction
+        - Radio interferometric calibration (CASA, MeqTrees)
+        - Galaxy kinematic modelling (3DBarolo, FAT)
+        - IllustrisTNG cosmological simulations
+        - Bayesian statistical methods
+    - title: Programming
+      items:
+        - Python (Astropy, NumPy, Matplotlib, emcee)
+        - CASA
+        - Bash / Linux
+
+- title: Selected Talks & Presentations
+  type: time_table
+  contents:
+    - title: Contributed talk — HI deficiency in Hickson Compact Groups
+      institution: Galaxy Evolution Workshop, IAA-CSIC
+      year: 2024
+    - title: Contributed talk — Angular momentum of isolated galaxies
+      institution: AMIGA team meeting, Granada
+      year: 2023
+
+- title: Community & Service
+  type: list
+  contents:
+    - Referee for <em>Monthly Notices of the Royal Astronomical Society</em> (MNRAS).
+    - SOC/LOC member, IAA Galaxy Evolution workshops.
+    - Outreach activities through the IAU Office of Astronomy for Development.

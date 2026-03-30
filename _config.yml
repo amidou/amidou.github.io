@@ -1,16 +1,166 @@
+# -----------------------------------------------------------------------------
+# Site settings
+# -----------------------------------------------------------------------------
+
 title: Amidou Sorgho
-description: Academic personal website
+first_name: Amidou
+middle_name:
+last_name: Sorgho
+email: asorgho@iaa.es
+description: >
+  Severo Ochoa Postdoctoral Fellow at IAA-CSIC (Granada).
+  Radio astronomer working on HI 21cm surveys, galaxy evolution,
+  angular momentum, and the role of environment in shaping galaxy properties.
+footer_text: >
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+  with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+keywords: >
+  radio astronomy, HI 21cm, galaxy evolution, MeerKAT, angular momentum,
+  compact groups, AMIGA, IAA-CSIC
+lang: en
+icon: 🔭
+
 url: https://amidou.github.io
+baseurl:
+last_updated: true
 
+# -----------------------------------------------------------------------------
+# Theme
+# -----------------------------------------------------------------------------
 
-markdown: kramdown
-permalink: pretty
+repo_theme_light: default
+repo_theme_dark: dark
+repo_trophies:
+  enabled: false
 
+# -----------------------------------------------------------------------------
+# RSS Feed
+# -----------------------------------------------------------------------------
 
-# plugins:
-#   - jekyll-scholar
+rss_icon: false
+
+# -----------------------------------------------------------------------------
+# Layout
+# -----------------------------------------------------------------------------
+
+navbar_fixed: true
+footer_fixed: false
+search_enabled: false
+socials_in_search: false
+bib_search: true
+
+# -----------------------------------------------------------------------------
+# Open Graph & Schema
+# -----------------------------------------------------------------------------
+
+serve_og_meta: true
+og_image:
+
+# -----------------------------------------------------------------------------
+# Social / contact links  (set to empty string to disable)
+# -----------------------------------------------------------------------------
+
+contact_note:
+
+github_username: amidou
+orcid_id: 0000-0002-5233-8260        # ← replace with your real ORCID
+scholar_userid:                        # ← add your Google Scholar ID if you have one
+inspirehep_id:                         # ← add your InspireHEP ID
+
+# -----------------------------------------------------------------------------
+# Analytics
+# -----------------------------------------------------------------------------
+
+google_analytics:
+
+# -----------------------------------------------------------------------------
+# Publications
+# -----------------------------------------------------------------------------
 
 scholar:
-  style: apa
-  source: ./_data
-  bibliography: publications.bib
+  last_name: [Sorgho]
+  first_name: [Amidou, A.]
+
+publication_order_descending: true
+
+enable_publication_badges:
+  altmetric: false
+  dimensions: true
+  google_scholar: false
+  inspirehep: true
+
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /news/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+announcements:
+  enabled: false
+
+latest_posts:
+  enabled: false
+
+# -----------------------------------------------------------------------------
+# Jekyll settings
+# -----------------------------------------------------------------------------
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+
+sass:
+  style: compressed
+
+enable_darkmode: true
+enable_navbar_social: true
+enable_project_categories: false
+enable_medium_zoom: true
+enable_progressbar: false
+enable_tooltips: false
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-scholar
+  - jekyll-imagemagick
+  - jekyll-jupyter-notebook
+  - jekyll-minifier
+
+# -----------------------------------------------------------------------------
+# Jekyll Scholar
+# -----------------------------------------------------------------------------
+
+scholar:
+  last_name: [Sorgho]
+  first_name: [Amidou, A.]
+  style: astrophysical-journal
+  locale: en
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+  replace_strings: true
+  join_strings: true
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+  query: "@*"
+  group_by: year
+  group_order: descending
