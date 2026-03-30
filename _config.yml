@@ -135,3 +135,28 @@ enable_tooltips: false
 plugins:
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-scholar
+  - jekyll-imagemagick
+  - jekyll-jupyter-notebook
+  - jekyll-minifier
+
+# -----------------------------------------------------------------------------
+# Jekyll Scholar
+# -----------------------------------------------------------------------------
+
+scholar:
+  last_name: [Sorgho]
+  first_name: [Amidou, A.]
+  style: astrophysical-journal
+  locale: en
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+  replace_strings: true
+  join_strings: true
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+  query: "@*"
+  group_by: year
+  group_order: descending
