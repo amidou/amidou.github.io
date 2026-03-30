@@ -25,8 +25,7 @@ selected_papers: true
 social: true
 ---
 
-I am a radio astronomer studying the **neutral atomic hydrogen (HI)** content of galaxies
-and what it reveals about their evolution. My work focuses on how environment —
+I am a radio astronomer studying the **neutral atomic hydrogen (HI)** content of galaxies and what it reveals about their evolution. My work focuses on how environment —
 from isolated field galaxies to dense compact groups — shapes the cold gas reservoirs
 that fuel star formation, and how **angular momentum** connects a galaxy's past to its
 future structural and kinematic state.

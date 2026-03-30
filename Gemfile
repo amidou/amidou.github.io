@@ -1,8 +1,13 @@
 source "https://rubygems.org"
 
-# ruby "3.2.4"
+ruby "3.2.4"
 
-gem 'github-pages', "~> 223", group: :jekyll_plugins
-gem "jekyll-include-cache", group: :jekyll_plugins
-# gem 'jekyll-scholar', group: :jekyll_plugins
-gem "webrick", "~> 1.7", group: :jekyll_plugins
+gem "jekyll", "~> 5.0"
+gem "jekyll-sitemap"
+gem "jekyll-feed"
+gem "jekyll-scholar"
+gem "jekyll-imagemagick"
+gem "jekyll-jupyter-notebook"
+gem "jekyll-minifier"
+gem "jekyll-include-cache"
+gem "webrick", "~> 1.7"

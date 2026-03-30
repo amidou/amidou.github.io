@@ -78,10 +78,6 @@ google_analytics:
 # Publications
 # -----------------------------------------------------------------------------
 
-scholar:
-  last_name: [Sorgho]
-  first_name: [Amidou, A.]
-
 publication_order_descending: true
 
 enable_publication_badges:
