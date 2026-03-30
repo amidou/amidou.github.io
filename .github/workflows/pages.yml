@@ -32,7 +32,7 @@ jobs:
           bundle install
 
       - name: Build site
-        run: bundle exec jekyll build --source . --destination ./_site
+        run: bundle exec jekyll build --source . --destination ./_site --trace
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
