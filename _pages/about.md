@@ -8,7 +8,7 @@ subtitle: >
 
 profile:
   align: right
-  image: prof_pic.jpg          # place your photo at assets/img/prof_pic.jpg
+  image: avatar.jpg          # place your photo at assets/img/prof_pic.jpg
   image_circular: true
   more_info: >
     <p>Instituto de Astrofísica de Andalucía</p>
