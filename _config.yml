@@ -7,67 +7,59 @@ first_name: Amidou
 middle_name:
 last_name: Sorgho
 email: asorgho@iaa.es
+
 description: >
   Severo Ochoa Postdoctoral Fellow at IAA-CSIC (Granada).
   Radio astronomer working on HI 21cm surveys, galaxy evolution,
   angular momentum, and the role of environment in shaping galaxy properties.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
-  with <a href="https://github.com/pages-themes/minimal">Minimal</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
 keywords: >
-  radio astronomy, HI 21cm, galaxy evolution, MeerKAT, angular momentum,
-  compact groups, AMIGA, IAA-CSIC
+  radio astronomy, HI 21cm, galaxy evolution, MeerKAT,
+  angular momentum, compact groups, AMIGA, IAA-CSIC
+
 lang: en
 icon: 🔭
 
-url: https://amidou.github.io
-baseurl:
+url: "https://amidou.github.io"
+baseurl: ""
+remote_theme: alshedivat/al-folio
+
 last_updated: true
+impressum_path:
 
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
-theme: jekyll-theme-minimal
 
-repo_theme_light: default
-repo_theme_dark: dark
-repo_trophies:
-  enabled: false
-
-# -----------------------------------------------------------------------------
-# RSS Feed
-# -----------------------------------------------------------------------------
-
-rss_icon: false
+repo_theme_light: github-light
+repo_theme_dark: github-dark
 
 # -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: false
-search_enabled: false
-socials_in_search: false
+footer_fixed: true
+search_enabled: true
+socials_in_search: true
 bib_search: true
 
+enable_darkmode: true
+enable_navbar_social: true
+enable_project_categories: true
+enable_medium_zoom: true
+enable_progressbar: false
+enable_tooltips: true
+
+max_width: 930px
+
 # -----------------------------------------------------------------------------
-# Open Graph & Schema
+# Open Graph & SEO
 # -----------------------------------------------------------------------------
 
 serve_og_meta: true
+serve_schema_org: true
 og_image:
-
-# -----------------------------------------------------------------------------
-# Social / contact links  (set to empty string to disable)
-# -----------------------------------------------------------------------------
-
-contact_note:
-
-github_username: amidou
-orcid_id: 0000-0002-5233-8260        # ← replace with your real ORCID
-scholar_userid:                        # ← add your Google Scholar ID if you have one
-inspirehep_id:                         # ← add your InspireHEP ID
 
 # -----------------------------------------------------------------------------
 # Analytics
@@ -76,16 +68,33 @@ inspirehep_id:                         # ← add your InspireHEP ID
 google_analytics:
 
 # -----------------------------------------------------------------------------
-# Publications
+# Blog
 # -----------------------------------------------------------------------------
 
-publication_order_descending: true
+blog_name: notes
+blog_description: Research notes and updates
 
-enable_publication_badges:
-  altmetric: false
-  dimensions: true
-  google_scholar: false
-  inspirehep: true
+permalink: /blog/:year/:title/
+
+pagination:
+  enabled: true
+
+related_blog_posts:
+  enabled: true
+  max_related: 5
+
+giscus:
+  repo:
+  repo_id:
+  category:
+  category_id:
+  mapping: title
+  strict: 0
+  reactions_enabled: 1
+  input_position: bottom
+  theme: preferred_color_scheme
+  emit_metadata: 0
+  lang: en
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -97,67 +106,192 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
+
   projects:
     output: true
     permalink: /projects/:path/
 
+  pages:
+    output: true
+
+  books:
+    output: false
+
+  dissertations:
+    output: false
+
 announcements:
-  enabled: false
+  enabled: true
+  scrollable: true
+  limit: 5
 
 latest_posts:
-  enabled: false
+  enabled: true
+  scrollable: true
+  limit: 3
 
 # -----------------------------------------------------------------------------
-# Jekyll settings
+# Social integration
+# -----------------------------------------------------------------------------
+
+github_username: amidou
+
+orcid_id: 0000-0002-5233-8260
+
+scholar_userid:
+
+inspirehep_id:
+
+ads_url:
+
+linkedin_username:
+
+twitter_username:
+
+mastodon_username:
+
+research_gate_profile:
+
+# -----------------------------------------------------------------------------
+# Contact note
+# -----------------------------------------------------------------------------
+
+contact_note: >
+  The best way to reach me is by email.
+
+# -----------------------------------------------------------------------------
+# RSS Feed
+# -----------------------------------------------------------------------------
+
+rss_icon: true
+
+# -----------------------------------------------------------------------------
+# Markdown and syntax highlighting
 # -----------------------------------------------------------------------------
 
 markdown: kramdown
 highlighter: rouge
+
 kramdown:
   input: GFM
   syntax_highlighter_opts:
     css_class: highlight
-    span:
-      line_numbers: false
-    block:
-      line_numbers: false
-      start_line: 1
+
+# -----------------------------------------------------------------------------
+# Sass / CSS
+# -----------------------------------------------------------------------------
 
 sass:
   style: compressed
 
-enable_darkmode: true
-enable_navbar_social: true
-enable_project_categories: false
-enable_medium_zoom: true
-enable_progressbar: false
-enable_tooltips: false
+# -----------------------------------------------------------------------------
+# Plugins
+# -----------------------------------------------------------------------------
 
 plugins:
-  - jekyll-sitemap
+  - jekyll-remote-theme
+  - jekyll-archives
+  - jekyll-email-protect
   - jekyll-feed
-  - jekyll-scholar
+  - jekyll-get-json
   - jekyll-imagemagick
   - jekyll-jupyter-notebook
+  - jekyll-linkattributes
   - jekyll-minifier
+  - jekyll-paginate-v2
+  - jekyll-scholar
+  - jekyll-socials
+  - jekyll-sitemap
+  - jekyll-tabs
+
+# -----------------------------------------------------------------------------
+# Jekyll Archives
+# -----------------------------------------------------------------------------
+
+jekyll-archives:
+  enabled:
+    - year
+    - tags
+    - categories
+  layouts:
+    year: archive-year
+    tag: archive-tag
+    category: archive-category
+  permalinks:
+    year: "/blog/:year/"
+    tag: "/blog/tag/:name/"
+    category: "/blog/category/:name/"
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Sorgho]
-  first_name: [Amidou, A.]
+  last_name:
+    - Sorgho
+
+  first_name:
+    - Amidou
+    - A.
+
   style: astrophysical-journal
   locale: en
+
   source: /_bibliography/
   bibliography: papers.bib
+
   bibliography_template: bib
+
   replace_strings: true
   join_strings: true
+
   details_dir: bibliography
   details_layout: bibtex.html
   details_link: Details
+
   query: "@*"
+
   group_by: year
   group_order: descending
+
+# -----------------------------------------------------------------------------
+# Publication options
+# -----------------------------------------------------------------------------
+
+publication_order_descending: true
+
+enable_publication_badges:
+  altmetric: false
+  dimensions: true
+  google_scholar: false
+  inspirehep: true
+
+# -----------------------------------------------------------------------------
+# External links behaviour
+# -----------------------------------------------------------------------------
+
+external_links:
+  enabled: true
+  rel: external nofollow noopener
+  target: _blank
+
+# -----------------------------------------------------------------------------
+# Optional features
+# -----------------------------------------------------------------------------
+
+enable_google_analytics: false
+enable_crisp_chat: false
+enable_math: true
+
+# -----------------------------------------------------------------------------
+# Exclude files from build
+# -----------------------------------------------------------------------------
+
+exclude:
+  - Dockerfile
+  - docker-compose.yml
+  - README.md
+  - vendor
+  - node_modules
+  - tmp
+  - Gemfile.lock
